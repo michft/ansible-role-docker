@@ -19,10 +19,7 @@ script:
   - ${PWD}/tests/test.sh
 
   # Test whether Docker is running correctly.
-  - service docker stop
-  - rm -rf /var/lib/docker/aufs
-  - service docker start
-  - docker exec --tty ${container_id} docker run hello-world
+  - docker exec --tty ${container_id} docker run hello-world; echo $?
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
