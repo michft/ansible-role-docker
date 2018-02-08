@@ -2,9 +2,9 @@
 dependencies: []
 
 galaxy_info:
-  author: geerlingguy
+  author: michft
   description: Docker for Linux.
-  company: "Midwestern Mac, LLC"
+  company: "Your name here"
   license: "license (BSD, MIT)"
   min_ansible_version: 2.0
   platforms:
