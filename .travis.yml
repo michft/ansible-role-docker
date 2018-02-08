@@ -19,7 +19,7 @@ script:
   # Run tests.
   - ${PWD}/tests/test.sh
 
-  # Test whether Docker is running correctly (Dockerception!).
+  # Test whether Docker is running correctly.
   - docker exec --tty ${container_id} docker run hello-world
 
 notifications:
